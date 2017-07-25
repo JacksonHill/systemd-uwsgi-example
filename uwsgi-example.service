@@ -1,0 +1,11 @@
+[Unit]
+Description=Sample uwsgi systemd unit
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/uwsgi-example
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

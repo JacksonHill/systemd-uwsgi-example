@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export UWSGI=/opt/example/venv/bin/uwsgi
+export LOGFILE=/opt/example/log/emperor.log
+export SVCUSER=nginx
+export GROUP=nginx
+export VASSALS=/opt/example/run
+
+#exec $UWSGI --master --emperor $VASSALS --die-on-term --uid $SVCUSER --gid $GROUP --logto $LOGFILE
+exec $UWSGI --master --emperor $VASSALS --die-on-term --uid $SVCUSER --gid $GROUP
+
