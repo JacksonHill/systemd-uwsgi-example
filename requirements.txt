@@ -4,4 +4,4 @@ itsdangerous==0.24
 Jinja2==2.11.3
 MarkupSafe==1.0
 uWSGI==2.0.22
-Werkzeug==2.2.3
+Werkzeug==3.0.3
